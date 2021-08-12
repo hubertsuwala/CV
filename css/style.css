@@ -126,10 +126,10 @@ HEADER
   line-height: 1.05;
   width: 80%;
 }
-.main-contact {
-  /* display: flex;
-  flex-direction: column; */
-}
+/* .main-contact {
+   display: flex;
+  flex-direction: column; 
+}  */
 .contacts {
   font-size: 1.8rem;
   line-height: 1.2;
@@ -148,7 +148,7 @@ HEADER
 }
 .coloboration-box {
   text-align: center;
-  padding: ;
+  
   background-color: #cce2e4;
 }
 .coloboration-content {
