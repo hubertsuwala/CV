@@ -12,10 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="img/favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
   <title>CV - Hubert Suwala
   </title>
   <script defer src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
   <header class="header">
@@ -24,9 +27,9 @@
       <ul class="main-navigation-list">
         <li><a class="main-navigation-link main-link" href="#experience">Experience</a></li>
         <li><a class="main-navigation-link main-link " href="#education">Education</a></li>
-        <li><a class="main-navigation-link main-link" href="#">Skills</a></li>
-        <li><a class="main-navigation-link main-link" href="#">Hobby</a></li>
-        <li><a class="main-navigation-link main-link" href="#">My page</a></li>
+        <li><a class="main-navigation-link main-link" href="#skills">Skills</a></li>
+       
+        <li><a class="main-navigation-link main-link" href="#footer">Contact</a></li>
       </ul>
      
     </nav>
@@ -127,11 +130,87 @@
     <section class="education" id="education">
       <div class="container">
         <span class="subheading">Education</span>
-        <h2 class="heading-secondary">Everything you shoud know about my experience</h2>
+        <h2 class="heading-secondary">Education is the most powerful weapon which you can use to change the world</h2>
+      </div>
+      <div class="slider container">
+        <div class="slide">
+          <div>
+            <div class="level-box">
+              <ion-icon class="school-icon" name="school-outline"></ion-icon>
+              <h3 class="level">High School Diploma</h3>
+            </div>
+            <h4 class="school">Jan Kochanowski High School in   Zwolen</h4>
+            <h5 class="field">Mathematics, Physics, IT</h5>
+            <p class="year">09.2007-06.2010</p>
+          </div>
+        </div>
+        <!-- <div class="slide">
+          <div>
+            <h3 class="level">Bachelor of Engineering</h3>
+            <h4 class="school">Warsaw University of Technology</h4>
+            <h5 class="field">Electrical Engineering</h5>
+            <p class="year">10.2010-02.2014</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div>
+            <h3 class="level">Master of Science</h3>
+            <h4 class="school">Warsaw University of Technology</h4>
+            <h5 class="field">Electrical Engineering</h5>
+            <p class="year">02.2014-12.2016</p>
+          </div>
+        </div> -->
+        <button class="slider-btn slider-btn--left">&larr;</button>
+        <button class="slider-btn slider-btn--right">&rarr;</button>
+        <div class="dots"></div>
       </div>
     </section>
+    <section class="skills" id="skills">
+      <div class="container">
+        <span class="subheading">Skills</span>
+        <h2 class="heading-secondary">As a future web developer, I have  knowledge about  </h2>
+      </div>
+      <div class="container skills-box">
+        <ion-icon class="skills-icon" name="logo-html5"></ion-icon>
+        <ion-icon class="skills-icon" name="logo-css3"></ion-icon>
+        <ion-icon class="skills-icon" name="logo-javascript"></ion-icon> 
+      </div>
+      <h3 class="container skills-furure">in process</h3>
+      <div class="container skills-box">
+        <ion-icon class="skills-icon" name="logo-sass"></ion-icon>
+        <ion-icon class="skills-icon" name="logo-react"></ion-icon>
+    </div>
+    </section>
+    <!-- <section class="hobby" id="contact">
+    </section> -->
   </main>
  
- <footer></footer>
+ <footer class="footer" id="footer">
+   <div class="container flex-footer"> 
+     <div  class="flex-link">
+       <a  href="#"><img class="logo" src="img/logo2.png"></a>
+       <a  href="https://linkedin.com/in/hubert-suwała-803443ba/"   class="linkedin" target="_blank"><ion-icon class="footer-icon"  name="logo-linkedin" ></ion-icon></a>
+     </div>
+     <div>
+       <address class="contacts">
+  <p class="address">
+    623 Harrison St., 2nd Floor, San Francisco, CA 94107
+  </p>
+  <p>
+    <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+    ><br />
+    <a class="footer-link" href="mailto:hello@omnifood.com"
+      >hello@omnifood.com</a
+    >
+  </p>
+</address>
+     </div>
+     <p class="copyright">
+      Copyright &copy; <span class="years">2027</span> by Hubert Suwala.
+      All rights reserved.
+    </p>
+</div>
+ </footer>
 </body>
 </html>
+
