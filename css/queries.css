@@ -1,0 +1,28 @@
+/* ********************* 
+BELOW 1344px (smaller desktop)
+ ********************* */
+@media (max-width: 84rem) {
+  .main {
+    max-width: 120rem;
+  }
+}
+/* @media (max-height: 60.75rem) {
+  .main {
+    background-color: red;
+  }
+  .me-photo {
+    width: 75%;
+  }
+} */
+
+/* ********************* 
+BELOW 1200px (tablets landscape)
+ ********************* */
+@media (max-width: 75rem) {
+  .header {
+    background-color: black;
+  }
+  /* .quote {
+    font-size: 5rem;
+  } */
+}

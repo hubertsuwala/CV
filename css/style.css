@@ -32,7 +32,7 @@ HEADER
 }
 .header {
   background-color: #cce2e4;
-   height: 100vh; 
+  height: 100vh;
 
   /* sticky nav */
 }
@@ -58,7 +58,7 @@ HEADER
   grid-template-columns: 1fr 1fr;
   align-items: center;
   /* gap: 9.6rem; */
-  padding: 5rem 3.2rem 5rem;
+  padding: 5rem 3.2rem;
 }
 
 .me-photo {
@@ -97,7 +97,8 @@ HEADER
 }
 .coloboration-box {
   text-align: center;
-  padding: 5rem 0;
+  padding-top: 8rem;
+  /* padding: 5rem 0; */
 }
 .coloboration-content {
   font-size: 3rem;
@@ -117,7 +118,7 @@ Experience
 }
 
 .experience {
-  padding-top: 8rem;
+  padding: 8rem 0 1rem ;
 }
 .subheading {
   display: block;
@@ -153,7 +154,7 @@ Experience
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 4rem 0;
+  
 }
 .job {
   background-color: #cce2e4;
