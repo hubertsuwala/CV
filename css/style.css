@@ -30,19 +30,27 @@ HEADER
   justify-content: center;
 }
 .main-navigation {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10rem;
+  width: 100%;
   padding: 0 4.6rem;
+
   /* margin: 0 3rem; */
 }
 .header {
   background-color: #cce2e4;
+  /* height: 100rem; */
   /* height: 100vh; */
-
-  /* sticky nav */
+}
+/* sticky nav */
+.main-navigation.sticky {
+  position: fixed;
+  z-index: 999;
+  background-color: #cce2e4c4;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 .logo {
   height: 6rem;
@@ -175,7 +183,7 @@ Experience
   font-size: 1.6rem;
   line-height: 1.1;
 }
-.list li p{
+.list li p {
   line-height: 1.2;
 }
 .date {
@@ -198,7 +206,7 @@ Experience
 .job li p:before {
   content: "\2014";
 }
-.date-mobile{
+.date-mobile {
   display: none;
 }
 

@@ -38,6 +38,7 @@ BELOW 1200px (tablets landscape)
 /* ********************* 
 BELOW 944px (tablets)
  ********************* */
+ 
 @media (max-width: 59em) {
   .logo {
     height: 4rem;
