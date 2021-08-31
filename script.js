@@ -3,30 +3,30 @@
 //////////////////////
 //page navigation smooth
 document
-  .querySelector(".main-navigation-list")
-  .addEventListener("click", function (e) {
+  .querySelector('.main-navigation-list')
+  .addEventListener('click', function (e) {
     e.preventDefault();
 
     // Matching strategy
-    if (e.target.classList.contains("main-navigation-link")) {
-      const id = e.target.getAttribute("href");
-      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    if (e.target.classList.contains('main-navigation-link')) {
+      const id = e.target.getAttribute('href');
+      document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
     }
   });
 
 //////////////
 //menu fade animation
 
-const nav = document.querySelector(".main-navigation");
+const nav = document.querySelector('.main-navigation');
 
 const handleHover = function (e) {
-  if (e.target.classList.contains("main-navigation-link")) {
+  if (e.target.classList.contains('main-navigation-link')) {
     const link = e.target;
     const siblings = link
-      .closest(".main-navigation")
-      .querySelectorAll(".main-navigation-link");
-    const logo = link.closest(".main-navigation").querySelector(".logo");
-    siblings.forEach((el) => {
+      .closest('.main-navigation')
+      .querySelectorAll('.main-navigation-link');
+    const logo = link.closest('.main-navigation').querySelector('.logo');
+    siblings.forEach(el => {
       if (el !== link) el.style.opacity = this;
     });
     logo.style.opacity = this;
@@ -34,20 +34,20 @@ const handleHover = function (e) {
 };
 
 // Passing "argument" into handler
-nav.addEventListener("mouseover", handleHover.bind(0.5));
-nav.addEventListener("mouseout", handleHover.bind(1));
+nav.addEventListener('mouseover', handleHover.bind(0.5));
+nav.addEventListener('mouseout', handleHover.bind(1));
 
 //////////////////////
 ////////sticky navigation
 
-const header = document.querySelector(".header");
+const header = document.querySelector('.header');
 const navHeight = nav.getBoundingClientRect().height;
 
 const stickyNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
-  if (!entry.isIntersecting) nav.classList.add("sticky");
-  else nav.classList.remove("sticky");
+
+  if (!entry.isIntersecting) nav.classList.add('sticky');
+  else nav.classList.remove('sticky');
 };
 
 const headerObserver = new IntersectionObserver(stickyNav, {
@@ -56,3 +56,26 @@ const headerObserver = new IntersectionObserver(stickyNav, {
   rootMargin: `-${navHeight}px`,
 });
 headerObserver.observe(header);
+
+///////////////////////
+//Reveal sections
+const allSections = document.querySelectorAll('.section');
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+  console.log(entry);
+
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('section-hidden');
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add('section-hidden');
+});
