@@ -1,9 +1,4 @@
-/*
 
-
-
-
-*/
 :root {
   --color-primary: #cce2e4;
   --color-secondary: #e6f1f2;
@@ -11,7 +6,6 @@
   --color-dot--active: #006d77;
   --color-step-number: #a3b5b6;
 }
-
 * {
   margin: 0;
   padding: 0;
