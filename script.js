@@ -2,18 +2,21 @@
 //nowy js
 
 //////////////////////
-//page navigation smooth
-document
-  .querySelector('.main-navigation-list')
-  .addEventListener('click', function (e) {
-    e.preventDefault();
+//page navigation smooth main nav
+document.querySelector('.header').addEventListener('click', function (e) {
+  e.preventDefault();
+
+  // Matching strategy
+  if (
+    e.target.classList.contains('main-navigation-link') ||
+    e.target.classList.contains('logo')
+  ) {
+    const id = e.target.getAttribute('href');
+    console.log(id);
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
     header.classList.remove('nav-open');
-    // Matching strategy
-    if (e.target.classList.contains('main-navigation-link')) {
-      const id = e.target.getAttribute('href');
-      document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
-    }
-  });
+  }
+});
 
 //////////////
 //menu fade animation
@@ -64,7 +67,6 @@ const allSections = document.querySelectorAll('.section');
 
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
 
   if (!entry.isIntersecting) return;
   entry.target.classList.remove('section-hidden');
@@ -97,7 +99,8 @@ const slider = function () {
     slides.forEach(function (_, i) {
       dotContainer.insertAdjacentHTML(
         'beforeend',
-        `<button class="dots-dot" data-slide="${i}"></button>`
+        `<button class="dots-dot" aria-label="dot-button" data-slide="${i}"></button>`
+        //lighthouse aria-label="dot-button"
       );
     });
   };
@@ -197,3 +200,13 @@ function checkFlexGap() {
   if (!isSupported) document.body.classList.add('no-flexbox-gap');
 }
 checkFlexGap();
+
+///////////////////////////////////////////////////////////
+//page hs icon navigation
+
+const hsIcon = document.querySelector('#logo');
+
+hsIcon.addEventListener('click', function (e) {
+  e.preventDefault();
+  headerEl.scrollIntoView({ behavior: 'smooth' });
+});
