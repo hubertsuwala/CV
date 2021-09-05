@@ -13,6 +13,8 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  
+
 }
 body {
   font-family: 'Rubik', sans-serif;
@@ -34,7 +36,7 @@ HEADER
   align-items: center;
   height: 10rem;
   width: 100%;
-  padding: 0 4.6rem;
+  padding: 0 4.5rem;
 }
 .header {
   background-color: var(--color-primary);
