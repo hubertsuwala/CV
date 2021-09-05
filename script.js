@@ -3,20 +3,22 @@
 
 //////////////////////
 //page navigation smooth main nav
-document.querySelector('.header').addEventListener('click', function (e) {
-  e.preventDefault();
+document
+  .querySelector('.main-navigation')
+  .addEventListener('click', function (e) {
+    e.preventDefault();
 
-  // Matching strategy
-  if (
-    e.target.classList.contains('main-navigation-link') ||
-    e.target.classList.contains('logo')
-  ) {
-    const id = e.target.getAttribute('href');
-    console.log(id);
-    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
-    header.classList.remove('nav-open');
-  }
-});
+    // Matching strategy
+    if (
+      e.target.classList.contains('main-navigation-link') ||
+      e.target.classList.contains('logo')
+    ) {
+      const id = e.target.getAttribute('href');
+      console.log(id);
+      document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+      header.classList.remove('nav-open');
+    }
+  });
 
 //////////////
 //menu fade animation

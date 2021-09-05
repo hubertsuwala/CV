@@ -140,7 +140,8 @@ Experience
 }
 .section-hidden {
   opacity: 0;
-  transform: translateY(10rem);
+  /* add this below after all in one function  */
+  /* transform: translateY(10rem); */
 }
 .container {
   max-width: 120rem;

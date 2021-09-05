@@ -11,64 +11,48 @@ BELOW 1200px (tablets landscape)
  ********************* */
 @media (max-width: 75em) {
   .quote {
-    font-size: 4.4rem;
+    font-size: 4.6rem;
   }
 }
 /* ********************* 
 BELOW 944px (tablets)
  ********************* */
-
 @media (max-width: 59em) {
   .logo {
     height: 4rem;
-  }
-  .main {
-    padding: 1rem 3.2rem;
   }
   .me-photo {
     width: 60%;
   }
   .quote {
-    font-size: 3rem;
+    font-size: 3.8rem;
   }
   .main-text {
     display: flex;
     justify-content: center;
   }
   .coloboration-box {
-    padding-top: 9rem;
+    margin-top: 9rem;
   }
   .coloboration-content {
     font-size: 2.2rem;
-    padding: 3rem 0;
+    margin: 6rem 0;
   }
   .logos-img {
-    height: 2rem;
-    padding: 0 2rem;
-  }
-  .experience {
-    padding: 3rem 0 3.2rem;
-  }
-  .education {
-    padding: 3rem 0;
-  }
-  .skills {
-    padding: 4rem 0;
+    height: 2.4rem;
   }
   .subheading {
     font-size: 2rem;
-    padding: 2rem 0 0;
   }
   .heading-secondary {
     font-size: 2.6rem;
-    padding: 3rem 0;
   }
   .step-number {
     font-size: 5.2rem;
   }
   .company {
     font-size: 2.2rem;
-    padding: 1rem 0 0;
+    margin: 1rem 0 0;
   }
   .list {
     font-size: 1.4rem;
@@ -76,12 +60,6 @@ BELOW 944px (tablets)
   }
   .date {
     font-size: 3.4rem;
-  }
-  .level {
-    padding-top: 3rem;
-  }
-  .school-icon {
-    padding-top: 3rem;
   }
   .slider-btn {
     height: 3.6rem;
@@ -96,12 +74,11 @@ BELOW 944px (tablets)
     right: 10%;
   }
   .skills-box {
-    padding: 3rem 0;
+    gap: 7rem;
   }
   .skills-icon {
     height: 8rem;
     width: 8rem;
-    padding: 0 2rem;
   }
   .skills-furure {
     font-size: 2.2rem;
@@ -120,7 +97,6 @@ BELOW 944px (tablets)
     padding: 4rem 0;
   }
   /* mobile navigation */
-
   .btn-mobile-nav {
     display: block;
     z-index: 1000;
@@ -132,7 +108,6 @@ BELOW 944px (tablets)
     left: 0;
     width: 100%;
     height: 100vh;
-
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -158,22 +133,19 @@ BELOW 944px (tablets)
     font-size: 4rem;
   }
 }
-
 /* ********************* 
-BELOW 704px (smaller tablets) 
+BELOW 720px (smaller tablets) 
  ********************* */
-@media (max-width: 44em) {
+@media (max-width: 45em) {
   .quote {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
   .coloboration-content {
-    font-size: 1.8rem;
-    padding: 3rem 0;
+    font-size: 2rem;
   }
   .logos {
     margin: 0 auto;
     width: 80%;
-    padding: 3rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 3rem;
@@ -183,27 +155,18 @@ BELOW 704px (smaller tablets)
   }
   .heading-secondary {
     font-size: 2.2rem;
-    padding: 2.6rem 0;
   }
   .step-number {
     font-size: 4.2rem;
   }
   .company {
     font-size: 2rem;
-    padding: 1rem 0 0;
   }
   .list {
     font-size: 1.4rem;
   }
   .date {
     font-size: 2.8rem;
-  }
-  .level {
-    font-size: 2rem;
-    padding-top: 2rem;
-  }
-  .school-icon {
-    padding-top: 2rem;
   }
   .school {
     font-size: 1.8rem;
@@ -226,20 +189,13 @@ BELOW 704px (smaller tablets)
   .slider-btn--left {
     left: 10%;
   }
-
   .slider-btn--right {
     right: 10%;
   }
   .skills-furure {
     font-size: 2rem;
   }
-  .skills-icon {
-    height: 6rem;
-    width: 6rem;
-    padding: 0 2rem;
-  }
 }
-
 /* ********************* 
 BELOW 560px (phones) 
  ********************* */
@@ -254,7 +210,6 @@ BELOW 560px (phones)
   .slider-btn--left {
     left: 6%;
   }
-
   .slider-btn--right {
     right: 6%;
   }
