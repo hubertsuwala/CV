@@ -83,11 +83,7 @@ HEADER
   line-height: 1.05;
   width: 80%;
 }
-.contacts {
-  font-size: 1.8rem;
-  line-height: 1.2;
-  justify-items: end;
-}
+
 .main-link:link,
 .main-link:visited {
   text-decoration: none;
@@ -350,6 +346,9 @@ skills
   color: inherit;
   text-decoration: none;
 }
-.phone {
-  text-decoration: none;
+.contacts {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  justify-items: end;
+  color: #555;
 }
