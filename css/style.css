@@ -239,7 +239,7 @@ Experience
   justify-content: center;
   margin: 0 auto;
   height: 17rem;
-  width: 90%;
+  width: 100%;
   /* THIS creates the animation! */
   transition: transform 1s;
 }
