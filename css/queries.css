@@ -232,4 +232,7 @@ BELOW 560px (phones)
     display: grid;
     grid-template-columns: 1fr;
   }
+  .school-icon {
+    display: none;
+  }
 }
