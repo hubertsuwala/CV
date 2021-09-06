@@ -200,6 +200,12 @@ BELOW 720px (smaller tablets)
 BELOW 560px (phones) 
  ********************* */
 @media (max-width: 35em) {
+  .coloboration-content {
+    margin: 0;
+  }
+  .coloboration-box {
+    margin: 0;
+  }
   .grid {
     grid-template-columns: 1fr;
     gap: 3rem;
