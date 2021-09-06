@@ -213,11 +213,17 @@ BELOW 560px (phones)
   .date {
     display: none;
   }
+  .education-box {
+    margin: 0 2rem;
+  }
+  .school {
+    line-height: 1.1;
+  }
   .slider-btn--left {
-    left: 6%;
+    left: 5%;
   }
   .slider-btn--right {
-    right: 6%;
+    right: 5%;
   }
   .date-mobile {
     display: block;
