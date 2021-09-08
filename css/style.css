@@ -164,6 +164,17 @@ Experience
   font-size: 2.4rem;
   margin: 2rem 0 1rem 0;
 }
+.location {
+  display: flex;
+  align-items: center;
+  font-size: 1.9rem;
+  margin: 1rem 0;
+}
+.location-icon {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+}
 .position {
   font-size: 1.9rem;
   margin: 1.5rem 0;
@@ -350,5 +361,4 @@ skills
   font-size: 1.8rem;
   line-height: 1.2;
   justify-items: end;
-
 }
