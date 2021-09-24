@@ -6,8 +6,7 @@
 document
   .querySelector('.main-navigation')
   .addEventListener('click', function (e) {
-    e.preventDefault();
-
+    if (!e.target.classList.contains('btn-nav')) e.preventDefault();
     // Matching strategy
     if (
       e.target.classList.contains('main-navigation-link') ||
